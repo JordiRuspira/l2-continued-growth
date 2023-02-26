@@ -260,7 +260,7 @@ order by 1 asc
 
 
 st.experimental_memo(ttl=1000000)
-@st.cache
+@st.cache_data
 def compute(a):
     data=sdk.query(a)
     return data
